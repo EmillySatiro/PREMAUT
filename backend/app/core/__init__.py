@@ -1,0 +1,1 @@
+"""Core utilities shared by all backend modules."""
