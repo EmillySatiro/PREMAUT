@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/EmillySatiro/PREMAUT/compare/v0.1.0...v0.2.0) (2026-04-17)
+
+
+### Features
+
+* add tstex_modules to .gitignore ([2939a58](https://github.com/EmillySatiro/PREMAUT/commit/2939a588459c6a8c43ca6c3ec05dad93c8ddcf10))
+
 ## 0.1.0 (2026-04-13)
 
 
