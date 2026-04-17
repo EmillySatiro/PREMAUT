@@ -2,6 +2,7 @@
 backend/__pycache__/
 backend/.pytest_cache/
 backend/.venv/
+tstex_modules/
 
 # Node
 frontend/node_modules/
