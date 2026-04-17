@@ -1,0 +1,131 @@
+.somos {
+  position: relative;
+  background: linear-gradient(101deg, #f4f5ef 0%, #f8f6f3 40%, #f9efec 100%);
+  padding: 48px 0 62px;
+  overflow: hidden;
+}
+
+.somos::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--somos-bg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.somos__container {
+  position: relative;
+  z-index: 1;
+  max-width: 1248px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  padding: 0 30px;
+}
+
+.somos__label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #111;
+  font-family: "Afacad", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.somos__label img {
+  width: 16px;
+  height: 16px;
+}
+
+.somos__text {
+  margin: 0;
+  max-width: 1188px;
+  color: #101010;
+  font-family: "Afacad", sans-serif;
+  font-size: 1.98rem;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+.somos__stats {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.somos__stat-card {
+  min-width: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.somos__stat-value {
+  font-family: "Afacad", sans-serif;
+  font-size: 2.5rem;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #000;
+}
+
+.somos__stat-label {
+  font-family: "Afacad", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.35;
+  color: #111;
+}
+
+@media (max-width: 1200px) {
+  .somos__text {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .somos {
+    padding: 32px 0 44px;
+  }
+
+  .somos__container {
+    padding: 0 16px;
+    gap: 24px;
+  }
+
+  .somos__text {
+    font-size: 1.08rem;
+    line-height: 1.55;
+    letter-spacing: 0;
+  }
+
+  .somos__stats {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .somos__stat-value {
+    font-size: 2rem;
+  }
+
+  .somos__stat-label {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .somos__stats {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  .somos__stat-card {
+    min-width: 0;
+  }
+}
