@@ -1,0 +1,179 @@
+.fazermos {
+  background: #f7f6f3;
+  padding: 88px 0 118px;
+}
+
+.fazermos__container {
+  max-width: 1248px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(520px, 568px);
+  align-items: start;
+  gap: 48px;
+  padding: 0 38px;
+}
+
+.fazermos__left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.fazermos__intro {
+  width: 100%;
+  max-width: 560px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.fazermos__title {
+  font-family: "Afacad", sans-serif;
+  font-size: clamp(2.1rem, 3vw, 3.9rem);
+  line-height: 1.03;
+  letter-spacing: -0.03em;
+  color: #111;
+  margin: 0;
+}
+
+.fazermos__mascot {
+  width: 161px;
+  height: 161px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.fazermos__desc {
+  font-family: "Afacad", sans-serif;
+  font-size: 1.62rem;
+  line-height: 1.36;
+  color: #191919;
+  margin: 0;
+  max-width: 560px;
+}
+
+.fazermos__cta {
+  margin-top: 4px;
+  border: none;
+  border-radius: 999px;
+  background: #4da1a9;
+  color: #f6f4f0;
+  height: 53px;
+  padding: 0 14px 0 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "Afacad", sans-serif;
+  font-size: 1.35rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.fazermos__cta:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+.fazermos__cta img {
+  width: 20px;
+  height: 20px;
+}
+
+.fazermos__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px 18px;
+}
+
+.fazermos__card {
+  background: #fdfefe;
+  border-radius: 16px;
+  min-height: 215px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+}
+
+.fazermos__card-dot {
+  width: 27px;
+  height: 27px;
+  border-radius: 999px;
+  background: #7dbec4;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fazermos__card-dot img {
+  width: 15px;
+  height: 15px;
+}
+
+.fazermos__card-title {
+  font-family: "Afacad", sans-serif;
+  font-size: 0.96rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #111;
+  margin: 0;
+}
+
+.fazermos__card-desc {
+  font-family: "Afacad", sans-serif;
+  font-size: 0.82rem;
+  line-height: 1.35;
+  color: #2b2b2b;
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .fazermos__container {
+    grid-template-columns: 1fr;
+    padding: 0 16px;
+  }
+
+  .fazermos__left {
+    max-width: 700px;
+  }
+
+  .fazermos__desc {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .fazermos {
+    padding: 50px 0 70px;
+  }
+
+  .fazermos__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fazermos__title {
+    font-size: 2.25rem;
+  }
+
+  .fazermos__intro {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .fazermos__mascot {
+    width: 120px;
+    height: 120px;
+  }
+
+  .fazermos__desc {
+    font-size: 1rem;
+  }
+
+  .fazermos__cta {
+    height: 46px;
+    font-size: 1rem;
+  }
+}

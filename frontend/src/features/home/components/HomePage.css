@@ -1,0 +1,9 @@
+.home-page {
+  min-height: 100vh;
+  background: #f6f4f0;
+  overflow-x: hidden;
+}
+
+.home-page > * {
+  width: 100%;
+}
