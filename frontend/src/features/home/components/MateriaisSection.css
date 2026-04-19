@@ -66,12 +66,28 @@
 }
 
 .materiais__book {
+  appearance: none;
+  border: 0;
+  padding: 0;
+  text-align: left;
   background: #4da1a9;
   border-radius: 16px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+  transition: transform 0.16s ease, box-shadow 0.16s ease;
+}
+
+.materiais__book:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.22);
+}
+
+.materiais__book:focus-visible {
+  outline: 3px solid rgba(77, 161, 169, 0.6);
+  outline-offset: 3px;
 }
 
 .materiais__book-media {
@@ -112,7 +128,7 @@
   height: 84px;
   padding: 0 12px;
   font-family: "Inria Serif", serif;
-  font-size: 1.95rem;
+  font-size: 1.50rem;
   color: #f6f4f0;
   display: inline-flex;
   align-items: center;

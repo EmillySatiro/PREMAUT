@@ -23,12 +23,24 @@ export default function MateriaisSection({ onViewMaterials, onViewPublicacoes }:
           <p className="materiais__desc">
             Livros, PDFs, artigos e outros materiais de apoio que podem ajudar você.
           </p>
-          <button className="materiais__more" type="button" onClick={onViewMaterials}>Ver mais</button>
+          <button
+            className="materiais__more"
+            type="button"
+            onClick={onViewPublicacoes ?? onViewMaterials}
+          >
+            Ver mais
+          </button>
         </div>
 
         <div className="materiais__track" aria-label="Materiais de apoio">
           {books.map((book) => (
-            <article key={book.id} className="materiais__book">
+            <button
+              key={book.id}
+              type="button"
+              className="materiais__book"
+              onClick={onViewMaterials}
+              aria-label={`Abrir material ${book.name}`}
+            >
               <div className="materiais__book-media">
                 <img src={bookCover} alt={book.name} className="materiais__book-cover" />
                 <span className="materiais__book-badge">{book.pages}</span>
@@ -36,7 +48,7 @@ export default function MateriaisSection({ onViewMaterials, onViewPublicacoes }:
               <div className="materiais__book-footer">
                 <span>{book.name}</span>
               </div>
-            </article>
+            </button>
           ))}
         </div>
 

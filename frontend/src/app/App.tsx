@@ -2,13 +2,16 @@ import { useEffect, useState } from "react";
 
 import HomePage from "../features/home/components/HomePage";
 import MateriaisPage from "../features/materials/components/MateriaisPage";
+import PublicacoesPage from "../features/publicacoes/components/PublicacoesPage";
 
 
 function App() {
   const [pathname, setPathname] = useState(() => window.location.pathname);
+  const [previousPathname, setPreviousPathname] = useState<string | null>(null);
 
   useEffect(() => {
     const handlePopState = () => {
+      setPreviousPathname(null);
       setPathname(window.location.pathname);
       window.scrollTo(0, 0);
     };
@@ -29,15 +32,34 @@ function App() {
       return;
     }
 
+    setPreviousPathname(pathname);
     window.history.pushState({}, "", nextPathname);
     setPathname(nextPathname);
   };
 
+  const handleBackFromMateriais = () => {
+    if (previousPathname === "/publicacoes") {
+      navigate("/publicacoes");
+      return;
+    }
+
+    navigate("/");
+  };
+
   if (pathname === "/materiais") {
-    return <MateriaisPage onNavigateHome={() => navigate("/")} onBack={() => navigate("/")} />;
+    return <MateriaisPage onNavigateHome={() => navigate("/")} onBack={handleBackFromMateriais} />;
   }
 
-  return <HomePage onViewMaterials={() => navigate("/materiais")} />;
+  if (pathname === "/publicacoes") {
+    return <PublicacoesPage onNavigateHome={() => navigate("/")} onOpenMaterial={() => navigate("/materiais")} />;
+  }
+
+  return (
+    <HomePage
+      onViewMaterials={() => navigate("/materiais")}
+      onViewPublicacoes={() => navigate("/publicacoes")}
+    />
+  );
 }
 
 
