@@ -1,18 +1,17 @@
 import HealthPanel from "../features/health/components/HealthPanel";
-
+import CadastroEvento from "./imports/CadastroEvento";
+import EditarEvento from "./imports/EditarEvento";
+import ArquivoPasciente from "./imports/ArquivosPaciente";
 
 function App() {
   return (
-    <main className="page">
-      <section className="card">
-        <p className="eyebrow">PREMAUT</p>
-        <h1>Ambiente React + FastAPI + PostgreSQL</h1>
-        <p className="muted">Esta tela valida a conexao com o backend e o banco.</p>
-        <HealthPanel />
-      </section>
-    </main>
+    <>
+      {/* <CadastroEvento /> */}
+      <ArquivoPasciente />
+      <EditarEvento />
+    </>
   );
-}
 
+}
 
 export default App;
