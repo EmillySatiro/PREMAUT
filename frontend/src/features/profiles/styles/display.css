@@ -1,0 +1,73 @@
+.profiles-root {
+    min-height: 100vh;
+    background: var(--bg);
+    --profiles-inline-space: clamp(14px, 3.5vw, 40px);
+    --profiles-top-max-width: 1240px;
+}
+
+.mock-badge {
+    margin: 14px auto 0;
+    width: min(1400px, calc(100% - 28px));
+    padding: 10px 12px;
+    border: 1px dashed rgba(var(--rgb-teal), 0.8);
+    border-radius: 12px;
+    color: var(--color-brand-muted);
+    font-family: "Lexend", "Segoe UI", sans-serif;
+    font-size: 0.85rem;
+    text-align: center;
+    background: rgba(var(--rgb-teal), 0.09);
+}
+
+.profiles-canvas {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 18px 0 0px;
+}
+
+.status-message {
+    width: min(var(--profiles-top-max-width), calc(100% - (2 * var(--profiles-inline-space))));
+    margin-inline: auto;
+    border-radius: 12px;
+    padding: 12px;
+    color: var(--color-status-info);
+    background: rgba(var(--rgb-blue), 0.15);
+}
+
+.status-error {
+    color: var(--color-status-error);
+    background: rgba(var(--rgb-salmon), 0.6);
+}
+
+.professor-screen,
+.monitor-screen,
+.patient-screen {
+    display: grid;
+    gap: 22px;
+}
+
+.professor-top-layout,
+.monitor-top-layout,
+.patient-top-layout {
+    display: grid;
+    grid-template-columns: 390px 1fr;
+    gap: 24px;
+    width: min(var(--profiles-top-max-width), calc(100% - (2 * var(--profiles-inline-space))));
+    margin-inline: auto;
+}
+
+.professor-content-layout {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
+    align-items: start;
+    width: min(var(--profiles-top-max-width), calc(100% - (2 * var(--profiles-inline-space))));
+    margin-inline: auto;
+    padding: 22px var(--profiles-inline-space) 28px;
+}
+
+.professor-title-band+.professor-content-layout,
+.monitor-title-band+.monitor-students-area,
+.patient-title-band+.reports-area {
+    margin-top: -22px;
+}

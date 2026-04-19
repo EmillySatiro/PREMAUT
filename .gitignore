@@ -16,3 +16,7 @@ frontend/dist/
 # IDE/OS
 .DS_Store
 Thumbs.db
+
+**/*.tsbuildinfo
+**/vite.config.d.ts
+**/vite.config.js

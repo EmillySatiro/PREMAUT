@@ -1,0 +1,99 @@
+.materials-grid {
+    display: grid;
+    justify-content: start;
+    justify-items: stretch;
+    gap: 16px;
+    grid-template-columns: repeat(2, minmax(150px, 250px));
+    width: fit-content;
+    max-width: 100%;
+}
+
+.button-mais {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: fit-content;
+    max-width: 100%;
+    justify-self: start;
+}
+
+.fundo-material-book {
+    display: flex;
+    align-items: stretch;
+    background:
+        linear-gradient(rgba(211, 211, 211, 0.6),
+            rgba(211, 211, 211, 0.6)),
+        url("../../../shared/images/fundo_girassol.jpg") 10% / cover no-repeat,
+        lightgray;
+    background-position: center;
+    width: 100%;
+    max-width: 320px;
+    aspect-ratio: 314 / 500;
+    padding: clamp(18px, 4.4vw, 34px) clamp(14px, 3vw, 24px);
+    border: 2px solid #FED5CA;
+    border-radius: 8px;
+}
+
+.material-book {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    box-shadow: 5px 5px 6px rgba(var(--rgb-black), 0.25);
+    border: 2px solid var(--color-teal);
+    overflow: hidden;
+}
+
+.book-cover {
+    position: relative;
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+    padding: 18px 14px;
+    color: var(--color-book-text);
+    background: linear-gradient(160deg, var(--color-book-gradient-start) 0%, var(--color-book-gradient-end) 100%);
+}
+
+.book-cover-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.book-pages {
+    position: absolute;
+    top: 12px;
+    right: 0px;
+    width: fit-content;
+    border-radius: 4px 0 0 4px;
+    padding: 2px 6px;
+    color: var(--color-white);
+    background: var(--book-number-bg);
+    font-size: 0.75rem;
+    z-index: 2;
+}
+
+.book-cover p {
+    position: absolute;
+    right: 14px;
+    bottom: 12px;
+    left: 14px;
+    margin: 0;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-white);
+    text-shadow: 0 2px 8px rgba(var(--rgb-black), 0.55);
+    z-index: 2;
+}
+
+.book-footer {
+    padding: 10px 12px;
+    color: var(--color-bg);
+    background: var(--teal);
+    font-size: 1rem;
+}

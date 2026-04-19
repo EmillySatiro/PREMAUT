@@ -1,0 +1,50 @@
+.professor-actions {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    width: min(var(--profiles-top-max-width), calc(100% - (2 * var(--profiles-inline-space))));
+    margin-inline: auto;
+}
+
+.professor-actions button,
+.patient-file-actions button,
+.reports-toolbar button {
+    border: 0;
+    border-radius: 15px;
+    padding: 14px 16px;
+    box-shadow: var(--card-shadow);
+    font-size: 1.05rem;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.action-event {
+    background: var(--salmon);
+}
+
+.action-student {
+    background: var(--teal);
+}
+
+.action-post {
+    background: var(--sand);
+}
+
+.action-panel {
+    background: var(--blue);
+}
+
+.see-all-btn {
+    width: 100%;
+    border: 0;
+    border-radius: 12px;
+    padding: 14px;
+    color: var(--color-action-text);
+    box-shadow: var(--card-shadow);
+    background: var(--salmon);
+    cursor: pointer;
+}

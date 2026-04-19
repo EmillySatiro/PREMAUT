@@ -1,0 +1,136 @@
+@media (max-width: 1240px) {
+
+    .professor-top-layout,
+    .monitor-top-layout,
+    .patient-top-layout,
+    .professor-content-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .materials-grid {
+        width: 100%;
+    }
+
+    .button-mais {
+        width: 100%;
+    }
+
+    .students-grid {
+        grid-template-columns: repeat(3, minmax(190px, 350px));
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1080px) {
+    .premaut-topbar {
+        gap: 12px;
+        padding-block: 14px;
+        padding-inline: clamp(12px, 2.6vw, 22px);
+    }
+
+    .premaut-brand {
+        gap: 8px;
+    }
+
+    .brand-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .brand-logo {
+        width: 72px;
+    }
+
+    .screen-nav {
+        justify-content: flex-start;
+    }
+
+    .screen-nav button {
+        padding: 7px 11px;
+        font-size: 0.92rem;
+    }
+}
+
+@media (max-width: 920px) {
+    .premaut-topbar {
+        grid-template-columns: minmax(0, 1fr) auto;
+        grid-template-areas:
+            "brand menu"
+            "nav nav";
+        row-gap: 10px;
+        position: static;
+    }
+
+    .premaut-brand {
+        grid-area: brand;
+    }
+
+    .screen-nav {
+        grid-area: nav;
+        justify-content: start;
+    }
+
+    .menu-toggle {
+        grid-area: menu;
+        justify-self: end;
+    }
+
+    .professor-actions {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .support-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .students-grid {
+        grid-template-columns: repeat(2, minmax(190px, 350px));
+        justify-content: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .premaut-topbar {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "brand"
+            "menu"
+            "nav";
+        justify-items: start;
+    }
+
+    .menu-toggle {
+        justify-self: start;
+    }
+
+    .screen-nav {
+        width: 100%;
+    }
+
+    .professor-title-band,
+    .monitor-title-band,
+    .patient-title-band {
+        font-size: 2.1rem;
+    }
+
+    .report-line {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+    }
+
+    .report-line p {
+        font-size: 1.4rem;
+    }
+
+    .students-grid {
+        grid-template-columns: minmax(190px, 350px);
+        justify-content: center;
+    }
+
+    .patient-file-actions,
+    .reports-toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}

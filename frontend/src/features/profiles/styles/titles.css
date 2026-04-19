@@ -1,0 +1,22 @@
+.professor-title-band,
+.monitor-title-band,
+.patient-title-band {
+    width: 100%;
+    margin: 0;
+    padding: 10px 16px;
+    font-size: clamp(2rem, 3vw, 3rem);
+    text-align: center;
+}
+
+.professor-title-band {
+    background: var(--salmon);
+}
+
+.monitor-title-band {
+    background: var(--sand);
+}
+
+.patient-title-band {
+    color: var(--color-bg);
+    background: var(--blue);
+}

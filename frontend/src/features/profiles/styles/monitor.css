@@ -1,0 +1,64 @@
+.monitor-screen {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    min-height: calc(100vh - 230px);
+}
+
+.monitor-students-area {
+    flex: 1;
+    width: 100%;
+    border-radius: 0;
+    padding: 22px var(--profiles-inline-space) 28px;
+    background:
+        url("../../../shared/images/fundo_transparente_peca.png") 10% / cover no-repeat,
+        var(--color-bg);
+}
+
+.students-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, minmax(190px, 350px));
+    justify-content: center;
+    width: 100%;
+}
+
+.student-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    border: 2px solid var(--teal);
+    border-radius: 20px;
+    padding: 14px;
+    text-align: center;
+    background: rgba(var(--rgb-white), 0.82);
+}
+
+.student-avatar {
+    display: grid;
+    place-items: center;
+    width: 88px;
+    height: 88px;
+    margin: 0 auto 10px;
+    border: 2px solid var(--teal);
+    border-radius: 999px;
+    color: var(--color-student-avatar);
+    background: var(--color-student-avatar-bg);
+}
+
+.student-tile h4 {
+    margin: 0 0 10px;
+    font-size: 2rem;
+}
+
+.student-tile button {
+    border: 0;
+    border-radius: 999px;
+    padding: 8px 16px;
+    color: var(--color-white);
+    background: var(--teal);
+    cursor: pointer;
+}

@@ -1,0 +1,135 @@
+.professor-profile-card,
+.monitor-profile-card,
+.patient-profile-card {
+    position: relative;
+    border: 2px solid;
+    border-radius: 40px;
+    padding: 24px 20px 22px;
+    text-align: center;
+}
+
+.professor-profile-card {
+    border-color: var(--salmon);
+}
+
+.monitor-profile-card {
+    border-color: var(--color-monitor-border);
+}
+
+.patient-profile-card {
+    border-color: var(--blue);
+}
+
+.mini-edit {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    border: 2px solid;
+    border-radius: 14px;
+    width: 34px;
+    height: 34px;
+    color: var(--color-avatar-icon);
+    background: transparent;
+    cursor: pointer;
+}
+
+.professor-profile-card .mini-edit {
+    border-color: var(--salmon);
+}
+
+.monitor-profile-card .mini-edit {
+    border-color: var(--color-monitor-border);
+}
+
+.patient-profile-card .mini-edit {
+    border-color: var(--blue);
+}
+
+.avatar-large {
+    display: grid;
+    place-items: center;
+    margin: 0 auto 10px;
+    width: 132px;
+    height: 132px;
+    border-radius: 999px;
+    font-size: 2rem;
+    color: var(--color-blue);
+    background: var(--color-avatar-bg);
+}
+
+.professor-profile-card h2,
+.monitor-profile-card h2,
+.patient-profile-card h2 {
+    font-size: clamp(1.6rem, 2vw, 2.1rem);
+}
+
+.profile-subtitle {
+    color: rgba(var(--rgb-black), 0.45);
+    font-size: 0.95rem;
+}
+
+.profile-contact {
+    margin-top: 3px;
+    font-size: 1rem;
+}
+
+.tag-professor,
+.tag-monitor,
+.tag-patient {
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 4px 10px;
+    color: var(--color-tag-text);
+    font-size: 0.9rem;
+}
+
+.tag-professor {
+    border: 1px solid var(--color-professor-tag-border);
+    background: var(--salmon);
+}
+
+.tag-monitor {
+    border: 1px solid var(--color-monitor-tag-border);
+    background: var(--sand);
+}
+
+.tag-patient {
+    border: 1px solid var(--color-patient-tag-border);
+    background: rgba(var(--rgb-blue), 0.4);
+}
+
+.professor-details-card,
+.monitor-details-card,
+.patient-support-card {
+    border: 2px solid;
+    border-radius: 40px;
+    padding: 18px 20px;
+    display: grid;
+    gap: 12px;
+}
+
+.professor-details-card {
+    border-color: var(--salmon);
+}
+
+.monitor-details-card {
+    border-color: var(--color-monitor-details-border);
+}
+
+.patient-support-card {
+    border-color: var(--blue);
+}
+
+.detail-row {
+    display: grid;
+    gap: 3px;
+}
+
+.detail-row p {
+    color: var(--muted);
+}
+
+.detail-row strong {
+    font-size: 1.1rem;
+}

@@ -1,0 +1,66 @@
+:root {
+    --color-bg: #f6f4f0;
+    --color-teal: #4da1a9;
+    --color-teal-rgb: 15, 118, 110;
+    --color-teal-strong: #4ba5ad;
+    --color-teal-deep: #4b99a2;
+    --color-blue: #6d94c5;
+    --color-salmon: #fae0d9;
+    --color-sand: #f9ebce;
+    --color-text: #202020;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --book-number-bg: #C02828;
+
+    --color-brand-muted: #2e666b;
+    --color-status-info: #224d73;
+    --color-status-error: #8b2f1e;
+    --color-action-text: #111111;
+    --color-avatar-icon: #567aa7;
+    --color-tag-text: #2a5387;
+    --color-book-text: #1c2d3a;
+    --color-student-avatar: #4b6f95;
+    --color-student-avatar-bg: #d4d7dd;
+    --color-avatar-bg: #d9dbe0;
+    --color-monitor-border: #ffd680;
+    --color-professor-tag-border: #ffc0af;
+    --color-monitor-tag-border: #ffdfa4;
+    --color-patient-tag-border: #8aa7d0;
+    --color-monitor-details-border: #fed887;
+    --color-book-pages: #d85f67;
+    --color-book-gradient-start: #a0c4b3;
+    --color-book-gradient-end: #8eb9a4;
+    --color-panel-gradient-mid: #ecf2f7;
+    --color-panel-gradient-end: #f3dce6;
+    --color-event-badge: #f09d1d;
+
+    --rgb-bg: 246, 244, 240;
+    --rgb-teal: 77, 161, 169;
+    --rgb-blue: 109, 148, 197;
+    --rgb-salmon: 250, 224, 217;
+    --rgb-sand: 249, 235, 206;
+    --rgb-black: 0, 0, 0;
+    --rgb-white: 255, 255, 255;
+
+    --rgb-pink-soft: 249, 192, 202;
+    --rgb-teal-soft: 159, 207, 215;
+    --rgb-yellow-soft: 251, 222, 163;
+    --rgb-green-soft: 171, 215, 173;
+    --rgb-yellow-muted: 247, 229, 188;
+    --rgb-blue-soft: 194, 223, 244;
+    --rgb-pink-soft-alt: 248, 212, 223;
+    --rgb-peach-soft: 253, 225, 190;
+    --rgb-lilac-soft: 248, 233, 240;
+
+    --shadow-card: 7px 7px 10px rgba(var(--rgb-black), 0.24);
+
+    /* Backward-compatible aliases used by existing styles */
+    --bg: var(--color-bg);
+    --teal: var(--color-teal);
+    --blue: var(--color-blue);
+    --salmon: var(--color-salmon);
+    --sand: var(--color-sand);
+    --text: var(--color-text);
+    --muted: rgba(var(--rgb-black), 0.52);
+    --card-shadow: var(--shadow-card);
+}

@@ -88,6 +88,7 @@ CREATE TABLE materiais_apoio (
 	titulo VARCHAR(200) NOT NULL,
 	categoria VARCHAR(30) NOT NULL CHECK (categoria IN ('pedagogico', 'esportivo', 'outro')),
 	descricao TEXT,
+    capa_url TEXT,
 	caminho_arquivo TEXT NOT NULL,
 	mime_type VARCHAR(100),
 	tamanho_bytes BIGINT CHECK (tamanho_bytes IS NULL OR tamanho_bytes >= 0),

@@ -1,0 +1,109 @@
+.patient-screen {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    min-height: calc(100vh - 230px);
+}
+
+.patient-support-card h3 {
+    margin-bottom: 4px;
+    font-size: 2.1rem;
+}
+
+.support-grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.support-column {
+    display: grid;
+    gap: 3px;
+}
+
+.support-column p,
+.support-column span {
+    color: var(--muted);
+}
+
+.support-column strong {
+    margin-bottom: 8px;
+    font-size: 1.02rem;
+}
+
+.patient-file-actions {
+    width: min(var(--profiles-top-max-width), calc(100% - (2 * var(--profiles-inline-space))));
+    margin: auto;
+    /* padding-inline: var(--profiles-inline-space); */
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.files-btn,
+.upload-btn,
+.write-btn {
+    color: var(--color-bg);
+    background: var(--blue);
+}
+
+.upload-btn {
+    min-width: 58px;
+}
+
+.reports-area {
+    flex: 1;
+
+    border-radius: 0;
+    padding: 22px var(--profiles-inline-space) 28px;
+    background:
+        linear-gradient(rgba(var(--rgb-bg), 0.65),
+            rgba(var(--rgb-bg), 0.65)),
+        url("../../../shared/images/fundo_opaco.jpg") 10% / cover no-repeat,
+        var(--color-bg);
+}
+
+.reports-area .content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: min(var(--profiles-top-max-width), calc(100% - (2 * var(--profiles-inline-space))));
+    margin-inline: auto;
+}
+
+.reports-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.feedback-btn {
+    color: var(--color-bg);
+    background: var(--teal);
+}
+
+.reports-list {
+    display: grid;
+    gap: 14px;
+}
+
+.report-line {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    border-radius: 8px;
+    padding: 22px 26px;
+    background: var(--color-bg);
+    box-shadow: 0 7px 7px rgba(var(--rgb-black), 0.24);
+}
+
+.report-line p {
+    font-size: 2rem;
+}
+
+.report-line span {
+    align-self: center;
+    color: rgba(var(--rgb-black), 0.65);
+}
